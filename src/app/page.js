@@ -24,7 +24,7 @@ export default function Home() {
     { name: "Contact", url: "/" },
   ];
   return (
-    <main className="min-h-screen max-h-screen py-16 px-40 bg-hero-pattern bg-no-repeat bg-center">
+    <main className="w-screen min-h-screen py-6 md:py-16 px-4 md:px-40 bg-hero-pattern bg-no-repeat bg-center">
       <nav className="flex justify-end">
         <div className="flex items-center gap-4">
           <div
@@ -53,11 +53,13 @@ export default function Home() {
           </button>
         </div>
       </nav>
-      <div className="flex justify-between py-24">
-        <div className="w-1/2 py-24">
-          <h6 className="font-bold text-5xl">Hi.</h6>
-          <div className="flex gap-2 items-center mt-3">
-            <small className="font-normal text-lg">meet</small><h1 className="font-bold text-7xl text-[#FF014F]">Amit Singha</h1>
+      <div className="flex flex-col md:flex-row justify-between py-24">
+        <div className="w-full md:w-1/2 py-8 md:py-24">
+          <h6 className="font-bold text-5xl text-center md:text-left">Hi.</h6>
+          <div className="flex flex-col md:flex-row gap-2 items-center mt-3">
+            <small className="font-normal text-lg">meet</small>
+            
+            <h1 className="font-bold text-7xl text-[#FF014F] text-center md:text-left">Amit Singha</h1>
           </div>
           <h2 className="font-semibold text-4xl mt-3">Web Developer & Mentor</h2>
           <Link href={'/'} className="inline-block w-28 h-10  relative mt-5"> <div className="absolute z-10 w-16 h-10 bg-[#FF014F] rounded-t-full rounded-bl-full rounded-b-none"></div> <span className="absolute inline-block z-20 right-7 top-2">Hire me</span></Link>
@@ -75,7 +77,7 @@ export default function Home() {
 
 
         </div>
-        <div className="w-1/2 flex flex-col justify-between">
+        <div className="w-full md:w-1/2 flex flex-col justify-between">
           <div className="w-1/2 px-12">
             <Image src="/images/trophy.png" alt="" width={'30'} height={'30'} />
             <h3 className="my-2">Expertise</h3>
